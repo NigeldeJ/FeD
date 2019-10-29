@@ -1,11 +1,13 @@
-body { /* Reset zodat alles mooi uitlijnt */
+body {
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
-} 
+}
 
-.main-nav { /* Vormgeving nav */
+/* Reset zodat alles mooi uitlijnt */
+
+.main-nav {
     display: flex;
     background: black;
     justify-content: flex-end;
@@ -17,11 +19,14 @@ body { /* Reset zodat alles mooi uitlijnt */
     height: 2.5em;
     text-transform: uppercase;
     margin-top: 0;
-} 
+}
+
+/* Vormgeving nav */
 
 
 
-li { /* Vormgeving van de items in de nav */
+li {
+
     color: white;
     margin-right: 3vw;
     align-self: center;
@@ -47,23 +52,32 @@ li:hover {
     cursor: pointer;
 }
 
-li a { /* Deze twee regels zorgen ervoor dat je geen irritante kleurverandering en underline krijgt bij een eerder bezochte link */
+/* Vormgeving van de items in de nav */
+
+
+
+li a {
+
     text-decoration: none;
 }
 
-li a:visited{
+li a:visited {
     color: inherit;
 }
 
-a:visited{
+a:visited {
     color: inherit;
 }
 
-a { 
+a {
     text-decoration: none;
 }
 
-.carousel { /* Vormgeving carousel */
+/* Deze vier regels zorgen ervoor dat je geen irritante kleurverandering en underline krijgt bij een eerder bezochte link */
+
+
+
+.carousel {
     width: 100%;
     position: relative;
     margin: auto;
@@ -81,21 +95,25 @@ a {
     width: 100%;
 }
 
-.carousel:hover{
+.carousel:hover {
     opacity: 0.9;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
     cursor: pointer;
 }
 
+/* Vormgeving carousel */
 
-.carouselimg:NOT(:first-of-type) { /* Hierdoor laat carousel alleen het eerste plaatje zien */
+
+.carouselimg:NOT(:first-of-type) {
     display: none;
 }
 
+/* Hierdoor laat carousel alleen het eerste plaatje zien */
 
 
-.prev {/* Vormgeving buttons in carousel */
+
+.prev {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -139,9 +157,11 @@ a {
     transition: all .4s ease;
 }
 
+/* Vormgeving buttons in carousel */
 
 
-.text {
+
+h2 {
     color: #000000;
     font-size: 2em;
     position: absolute;
@@ -153,11 +173,15 @@ a {
     opacity: 0.8;
 }
 
-.dot { /* I.s.m. de JS houdt de dot bij bij welk plaatje we zijn */
+.dot {
     display: none;
 }
 
-h1 { /* Vormgeving Latest News section */
+/* I.s.m. de JS houdt de dot bij bij welk plaatje we zijn */
+
+
+
+h1 {
     color: #000000;
     font-family: fantasy;
     text-align: center;
@@ -166,7 +190,7 @@ h1 { /* Vormgeving Latest News section */
     margin: 1em;
 }
 
-h2 {
+h3 {
     color: #000000;
     font-family: fantasy;
     text-align: center;
@@ -185,6 +209,10 @@ p {
     margin: auto;
     margin-bottom: 4em;
 }
+
+/* Vormgeving Spotify sneak preview */
+
+
 
 .latestnews {
     display: flex;
@@ -212,9 +240,11 @@ p {
     cursor: pointer;
 }
 
+/* Vormgeving Latest News section */
 
 
-.newstitle { /* Vormgeving titel binnen latest news */
+
+.newstitle {
     color: #000000;
     background: rgba(255, 255, 255, 0.8);
     position: relative;
@@ -225,18 +255,23 @@ p {
     font-family: fantasy, sans-serif;
 }
 
+/* Vormgeving titel binnen latest news */
 
 
-@media only screen and (max-width: 40em) { /* Media-query zodat bij minder dan 640px schermbreedte de latest news section van row naar column verandert */
+
+@media only screen and (max-width: 40em) {
     .latestnews {
         flex-direction: column;
         font-size: 1.6em;
     }
 }
 
+/* Media-query zodat bij minder dan 640px schermbreedte de latest news section van row naar column verandert */
 
 
-.form { /* Vormgeving contactform */
+
+
+.form {
     background: black;
     width: 80%%;
     height: 25em;
@@ -244,13 +279,13 @@ p {
     color: black;
 }
 
-.name {
+.naam {
     background-color: purple;
     height: 2em;
     width: 60%;
 }
 
-.name:hover {
+.naam:hover {
     background-color: #699582;
 }
 
@@ -264,7 +299,7 @@ p {
     background-color: #728651;
 }
 
-.message {
+.bericht {
     background-color: blue;
     overflow: hidden;
     height: 6em;
@@ -272,7 +307,7 @@ p {
     color: white;
 }
 
-.message:hover {
+.bericht:hover {
     background-color: #2DD7BB;
 }
 
@@ -284,11 +319,8 @@ p {
 .submit:hover {
     background-color: green;
     cursor: pointer;
-}
-
-.submit:active {
-    transform:rotate(360deg);
-    -webkit-transform:rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
 
 .knop {
@@ -305,12 +337,43 @@ p {
     outline: none;
 }
 
-.topimg img{
+::placeholder {
+    color: white;
+    font-size: 1.3em;
+    font-family: fantasy;
+}
+
+/* Vormgeving contactform */
+
+
+.topimg img {
     width: 100%;
     height: 20em;
     object-fit: cover;
     margin-top: -2em;
 }
+
+/* Vormgeving plaatje op detailpagina */
+
+
+
+@media only screen and (min-width: 40em) {
+    p {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h3 {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Mediaquery op de detailpagina die zorgt dat alles netjes leesbaar blijft, en uitgelijnd */
+
+
 
 .giphy-embed {
     display: block;
@@ -318,7 +381,7 @@ p {
     margin: 2em auto 0 auto;
 }
 
-.terug{
+.terug {
     background-color: red;
     height: 3em;
 }
@@ -326,10 +389,24 @@ p {
 .terug:hover {
     background-color: green;
     cursor: pointer;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
 }
 
-::placeholder {
-  color: white;
-  font-size: 1.3em;
-  font-family: fantasy;
+/* Vormgeving easter egg pagina ;) */
+
+
+li a:focus {
+    background-color: yellow;
+    outline: inherit;
+}
+
+button:focus {
+    background-color: yellow;
+    outline: inherit;
+}
+
+input:focus {
+    background-color: yellow;
+    outline: inherit;
 }
