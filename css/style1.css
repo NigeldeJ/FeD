@@ -1,0 +1,335 @@
+body { /* Reset zodat alles mooi uitlijnt */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+} 
+
+.main-nav { /* Vormgeving nav */
+    display: flex;
+    background: black;
+    justify-content: flex-end;
+    font-family: fantasy;
+    font-size: 2em;
+    list-style: none;
+    padding: inherit;
+    opacity: 1;
+    height: 2.5em;
+    text-transform: uppercase;
+    margin-top: 0;
+} 
+
+
+
+li { /* Vormgeving van de items in de nav */
+    color: white;
+    margin-right: 3vw;
+    align-self: center;
+    padding: 0.7em 0.2em 0.6em 0.2em;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+li:first-child {
+    margin-right: auto;
+    padding-left: .2em;
+    object-fit: cover;
+}
+
+li:hover:NOT(:first-child) {
+    background: white;
+    color: black;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+li a { /* Deze twee regels zorgen ervoor dat je geen irritante kleurverandering en underline krijgt bij een eerder bezochte link */
+    text-decoration: none;
+}
+
+li a:visited{
+    color: inherit;
+}
+
+a:visited{
+    color: inherit;
+}
+
+a { 
+    text-decoration: none;
+}
+
+.carousel { /* Vormgeving carousel */
+    width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top: -2em;
+    max-height: 42vh;
+    object-fit: cover;
+    margin-bottom: 1em;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+.carouselimg img {
+    max-height: 42vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel:hover{
+    opacity: 0.9;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+
+.carouselimg:NOT(:first-of-type) { /* Hierdoor laat carousel alleen het eerste plaatje zien */
+    display: none;
+}
+
+
+
+.prev {/* Vormgeving buttons in carousel */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -2em;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 0 .4em .4em 0;
+    user-select: none;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -2em;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 0 1em 1em 0;
+    user-select: none;
+    right: 0;
+    border-radius: .4em 0 0 .4em;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+.prev:hover {
+    background-color: #3C3C3C;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.next:hover {
+    background-color: #3C3C3C;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+
+
+.text {
+    color: #000000;
+    font-size: 2em;
+    position: absolute;
+    bottom: .6em;
+    width: 100%;
+    text-align: center;
+    font-family: fantasy;
+    background: white;
+    opacity: 0.8;
+}
+
+.dot { /* I.s.m. de JS houdt de dot bij bij welk plaatje we zijn */
+    display: none;
+}
+
+h1 { /* Vormgeving Latest News section */
+    color: #000000;
+    font-family: fantasy;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.87em;
+    margin: 1em;
+}
+
+h2 {
+    color: #000000;
+    font-family: fantasy;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 2em 1em 2em;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 1.1em;
+    margin: 1em 2em 2em 2em;
+}
+
+.spotify {
+    display: block;
+    margin: auto;
+    margin-bottom: 4em;
+}
+
+.latestnews {
+    display: flex;
+    background-color: #000000;
+    font-size: 1.2em;
+}
+
+.latestnews > div {
+    background-color: #000000;
+    padding: 1em;
+    flex: 1;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+.latestnews div img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.latestnews > div:hover {
+    opacity: 0.6;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+
+
+.newstitle { /* Vormgeving titel binnen latest news */
+    color: #000000;
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+    bottom: 2em;
+    font-size: 1em;
+    width: auto;
+    text-align: center;
+    font-family: fantasy, sans-serif;
+}
+
+
+
+@media only screen and (max-width: 40em) { /* Media-query zodat bij minder dan 640px schermbreedte de latest news section van row naar column verandert */
+    .latestnews {
+        flex-direction: column;
+        font-size: 1.6em;
+    }
+}
+
+
+
+.form { /* Vormgeving contactform */
+    background: black;
+    width: 80%%;
+    height: 25em;
+    padding: 1em;
+    color: black;
+}
+
+.name {
+    background-color: purple;
+    height: 2em;
+    width: 60%;
+}
+
+.name:hover {
+    background-color: #699582;
+}
+
+.email {
+    background-color: deeppink;
+    height: 2em;
+    width: 60%;
+}
+
+.email:hover {
+    background-color: #728651;
+}
+
+.message {
+    background-color: blue;
+    overflow: hidden;
+    height: 6em;
+    width: 60%;
+    color: white;
+}
+
+.message:hover {
+    background-color: #2DD7BB;
+}
+
+.submit {
+    background-color: #2DD7BB;
+    height: 3em;
+}
+
+.submit:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+.submit:active {
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+}
+
+.knop {
+    display: flex;
+    margin: 2em auto;
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+    transition: all 0.5s ease 0s;
+    color: white;
+}
+
+.knop:focus {
+    outline: none;
+}
+
+.topimg img{
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    margin-top: -2em;
+}
+
+.giphy-embed {
+    display: block;
+    width: 50%;
+    margin: 2em auto 0 auto;
+}
+
+.terug{
+    background-color: red;
+    height: 3em;
+}
+
+.terug:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+::placeholder {
+  color: white;
+  font-size: 1.3em;
+  font-family: fantasy;
+}
