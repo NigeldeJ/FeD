@@ -397,16 +397,15 @@ p {
 
 
 li a:focus {
-    background-color: yellow;
-    outline: inherit;
+    outline-color: crimson;
 }
 
 button:focus {
-    background-color: yellow;
-    outline: inherit;
+    background-color: green;
 }
 
 input:focus {
     background-color: yellow;
-    outline: inherit;
 }
+
+/* Vormgeving focus state */
