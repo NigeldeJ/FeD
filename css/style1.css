@@ -11,7 +11,7 @@ body {
     display: flex;
     background: black;
     justify-content: flex-end;
-    font-family: fantasy;
+    font-family: fantasy, Tahoma, sans-serif;
     font-size: 2em;
     list-style: none;
     padding: inherit;
@@ -168,7 +168,7 @@ h2 {
     bottom: .6em;
     width: 100%;
     text-align: center;
-    font-family: fantasy;
+    font-family: fantasy, Tahoma, sans-serif;
     background: white;
     opacity: 0.8;
 }
@@ -183,7 +183,7 @@ h2 {
 
 h1 {
     color: #000000;
-    font-family: fantasy;
+    font-family: fantasy, Tahoma, sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-size: 1.87em;
@@ -192,7 +192,7 @@ h1 {
 
 h3 {
     color: #000000;
-    font-family: fantasy;
+    font-family: fantasy, Tahoma, sans-serif;
     text-align: center;
     font-size: 1.5em;
     margin: 0 2em 1em 2em;
@@ -252,7 +252,7 @@ p {
     font-size: 1em;
     width: auto;
     text-align: center;
-    font-family: fantasy, sans-serif;
+    font-family: fantasy, Tahoma, sans-serif;
 }
 
 /* Vormgeving titel binnen latest news */
@@ -340,7 +340,7 @@ p {
 ::placeholder {
     color: white;
     font-size: 1.3em;
-    font-family: fantasy;
+    font-family: fantasy, Tahoma, sans-serif;
 }
 
 /* Vormgeving contactform */
