@@ -1,3 +1,5 @@
+/*eslint-env browser*/
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -32,10 +34,3 @@ function showSlides(n) {
 
 /* JavaScript voor de plaatjes in de carousel */
 /* Bron: https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9 */
-
-var button = document.querySelector("#testbutton");
-var element = document.querySelector("#testdiv");
-
-button.addEventListener("click", function() {
-  element.classList.toggle("yes");
-});
