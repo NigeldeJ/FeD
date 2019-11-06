@@ -451,10 +451,17 @@ li a:focus {
     margin: auto;
     opacity: 0;
     transition: 0.3s;
+    font-family: fantasy, Tahoma, sans-serif;
+    border-radius: 1em;
 }
 
 #testdiv.yes {
     opacity: 1;
+}
+
+#testdiv.yes:hover {
+    background: green;
+    color: white;
 }
 
 #testbutton {
