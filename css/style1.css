@@ -271,7 +271,9 @@ p {
 
 
 
-.form {
+form {
+    display: flex;
+    flex-direction: column;
     background: black;
     width: 80%%;
     height: 25em;
@@ -279,53 +281,11 @@ p {
     color: black;
 }
 
-.naam {
+#naam {
     background-color: purple;
     height: 2em;
     width: 60%;
-}
-
-.naam:hover {
-    background-color: #699582;
-}
-
-.email {
-    background-color: deeppink;
-    height: 2em;
-    width: 60%;
-}
-
-.email:hover {
-    background-color: #728651;
-}
-
-.bericht {
-    background-color: blue;
-    overflow: hidden;
-    height: 6em;
-    width: 60%;
-    color: white;
-}
-
-.bericht:hover {
-    background-color: #2DD7BB;
-}
-
-.submit {
-    background-color: #2DD7BB;
-    height: 3em;
-}
-
-.submit:hover {
-    background-color: green;
-    cursor: pointer;
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-}
-
-.knop {
-    display: flex;
-    margin: 2em auto;
+    margin: auto;
     padding: 1em;
     border-radius: 1em;
     border: none;
@@ -333,8 +293,61 @@ p {
     color: white;
 }
 
-.knop:focus {
-    outline: none;
+#naam:hover {
+    background-color: #699582;
+}
+
+#email {
+    background-color: deeppink;
+    height: 2em;
+    width: 60%;
+    margin: auto;
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+    transition: all 0.5s ease 0s;
+    color: white;
+}
+
+#email:hover {
+    background-color: #728651;
+}
+
+#bericht {
+    background-color: blue;
+    overflow: hidden;
+    height: 6em;
+    width: 60%;
+    color: white;
+    margin: auto;
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+    transition: all 0.5s ease 0s;
+}
+
+#bericht:hover {
+    background-color: #2DD7BB;
+}
+
+.submit {
+    background-color: #2DD7BB;
+    height: 3em;
+    width: 15%;
+    margin: auto;
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 3em;
+    color: white;
+}
+
+.submit:hover {
+    background-color: green;
+    cursor: pointer;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
 
 ::placeholder {
@@ -382,8 +395,16 @@ p {
 }
 
 .terug {
+    display: flex;
     background-color: red;
     height: 3em;
+    margin: auto;
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 3em;
+    color: white;
 }
 
 .terug:hover {
@@ -399,13 +420,55 @@ p {
 li a:focus {
     outline-color: crimson;
 }
-
-button:focus {
+    
+/* button:focus {
     background-color: green;
+} */
+
+#naam:focus {
+    background-color: gray;
+    outline: none;
 }
 
-input:focus {
-    background-color: yellow;
+#email:focus {
+    background-color: gray;
+    outline: none;
+}
+
+#bericht:focus {
+    background-color: gray;
+    outline: none;
 }
 
 /* Vormgeving focus state */
+
+
+#testdiv {
+  width: 10%;
+  text-align: center;
+  border: .1em solid gray;
+  padding: 2em;
+  margin: auto;
+  opacity: 0;
+  transition: 0.3s;
+}
+#testdiv.yes {
+  opacity: 1;
+}
+
+#testbutton{
+    display: flex;
+    background-color: red;
+    height: 3em;
+    margin: auto;
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 3em;
+    color: white;
+}
+
+#testbutton:hover {
+    background-color: green;
+    cursor: pointer;
