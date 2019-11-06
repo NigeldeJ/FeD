@@ -420,7 +420,7 @@ form {
 li a:focus {
     outline-color: crimson;
 }
-    
+
 /* button:focus {
     background-color: green;
 } */
@@ -444,21 +444,22 @@ li a:focus {
 
 
 #testdiv {
-  width: 10%;
-  text-align: center;
-  border: .1em solid gray;
-  padding: 2em;
-  margin: auto;
-  opacity: 0;
-  transition: 0.3s;
-}
-#testdiv.yes {
-  opacity: 1;
+    width: 10%;
+    text-align: center;
+    border: .1em solid gray;
+    padding: 2em;
+    margin: auto;
+    opacity: 0;
+    transition: 0.3s;
 }
 
-#testbutton{
+#testdiv.yes {
+    opacity: 1;
+}
+
+#testbutton {
     display: flex;
-    background-color: red;
+    background-color: deeppink;
     height: 3em;
     margin: auto;
     padding: 1em;
