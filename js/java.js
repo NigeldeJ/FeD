@@ -1,5 +1,3 @@
-/*eslint-env browser*/
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
